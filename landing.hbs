@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navbar Example</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+
+        <div class="logo">
+            <img src="/img/logo.png" alt="img">
+        </div>
+
+
+        <div class="input-fields ">
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Master Manage<i class="zmdi zmdi-caret-down"></i></button>
+
+                <div class="dropdown-content">
+                    <a href="#">master</a>
+                    <a href="#">master</a>
+                    <a href="#">master</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Reports <i class="zmdi zmdi-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Report 1</a>
+                    <a href="#">Report 2</a>
+                    <a href="#">Report 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">All Settings <i class="zmdi zmdi-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Setting 1</a>
+                    <a href="#">Setting 2</a>
+                    <a href="#">Setting 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Help <i class="zmdi zmdi-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <div class="input-fieldss ">
+
+        <div class="dropdown">
+            <button class="dropbtn">Master manage<i class="zmdi zmdi-caret-down"></i></button>
+
+            <div class="dropdown-content">
+                <a href="#">master</a>
+                <a href="#">master</a>
+                <a href="#">master</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Reports <i class="zmdi zmdi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Report 1</a>
+                <a href="#">Report 2</a>
+                <a href="#">Report 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">All Settings <i class="zmdi zmdi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Setting 1</a>
+                <a href="#">Setting 2</a>
+                <a href="#">Setting 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Help <i class="zmdi zmdi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">FAQs</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="viewport">
+        <div id="sidebar">
+            <ul class="nav">
+                <li><a href="#"><i class="zmdi zmdi-home" style="font-size: 33px;    margin-left: 3px;"></i> Home</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-anchor" style="font-size: 33px;"></i> Order</a></li>
+                <li><a href="#" style="padding-right: 9px;"><i class="zmdi zmdi-widgets"
+                            style="    font-size: 35px;
+    margin-left: 10px;
+"></i> All order</a></li>
+                <li><a href="#"><i class="zmdi zmdi-calendar" style="font-size: 35px;margin-left: 6px;"></i> Listing</a>
+                </li>
+                <li><a href="#"><i class="fa-regular fa-rectangle-list" style="font-size: 35px;    margin-left: 5px;
+"></i> Inventory</a></li>
+            </ul>
+
+        </div>
+        <div id="content">
+            <div class="container-fluid"></div>
+            <div class="container">
+                <div class="inner-container">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Offline</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex; font-size:16px;justify-content:center;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Online</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex;justify-content:center;font-size:16px;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Total Orders</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex;justify-content:center;font-size:16px;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Sale</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex;justify-content:center;font-size:16px;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Tax</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex;justify-content:center;font-size:16px;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="status">Discount</div>
+                        <div class="count">0</div>
+                        <div class="footer">
+                            <h5 style="display: flex;justify-content:center;font-size:16px;align-items:center;margin-top: 5px;">0.0</h5>
+                        </div>
+                    </div>
+                    <div class="empty-board">
+                        <div class="top-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerr">
+            <div class="top-section">
+                <input type="text" placeholder="Search...">
+                <input type="date">
+                <button class="search-btn">Search</button>
+                <button class="top-sale-btn">Top Sale Item</button>
+            </div>
+           
+            <div class="content">
+                <!-- Your content goes here -->
+            </div>
+        </div>
+        <div class="top-section">
+        </div>
+        <div class="divider"></div>
+        <!-- Additional content of the second container -->
+        <div class="content">
+            <!-- Your content goes here -->
+        </div>
+        <div class="contain">
+            <div class="graph">
+                <input type="date" placeholder="Form" name="" id="">
+                <input type="date" placeholder="To" name="" id="">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="payment">
+                <div class="p1">
+                    <p>Payment</p>
+                </div>
+                <div class="p1">
+                    <p>Google Pay</p>
+                </div>
+                <div class="p1">
+                    <p>Phonepe</p>
+                </div>
+                <div class="p1">
+                    <p>Amazone</p>
+                </div>
+                <div class="p1">
+                    <p>Flipkart</p>
+                </div>
+                <div class="p1">
+                    <p>Meesho</p>
+                </div>
+                <div class="p1">
+                    <p>Cash</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        body::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        /* Sidebar Styles */
+        #viewport {
+            padding-left: 150px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            margin: 0;
+        }
+
+        #content {
+            width: 100%;
+            position: relative;
+            margin-right: 0;
+        }
+
+        #sidebar {
+            top: 52px;
+            /* Move sidebar to top */
+            left: 0px;
+            /* Initially hide the sidebar on the left side */
+            position: fixed;
+            width: 145px;
+            /* Fixed width for sidebar */
+            height: 100%;
+            overflow-y: auto;
+            background: #37474F;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            display: block;
+            /* Initially hide the sidebar */
+            flex-direction: column;
+            /* Display sidebar items vertically by default */
+        }
+
+        #sidebar.open {
+            left: 0;
+            position: fixed;
+            top: 50px;
+            /* Adjust as needed */
+            width: 100%;
+            height: calc(100% - 50px);
+            /* Adjust as needed */
+            overflow-y: auto;
+            background-color: #37474F;
+        }
+
+        #sidebar header {
+            background-color: #263238;
+            font-size: 20px;
+            line-height: 52px;
+            text-align: center;
+        }
+
+        #sidebar header a {
+            color: #fff;
+            display: block;
+            text-decoration: none;
+        }
+
+        .input-fieldss {
+            display: none;
+        }
+
+        #sidebar header a:hover {
+            color: #fff;
+        }
+
+        #sidebar .nav {
+            list-style-type: none;
+            padding: 17px;
+        }
+
+        #sidebar .nav a {
+            background: none;
+            color: #CFD8DC;
+            font-size: 14px;
+            padding: 16px 24px;
+            display: block;
+            text-decoration: none;
+        }
+
+        #sidebar .nav a:hover {
+            background: none;
+            color: #ECEFF1;
+        }
+
+        .top-navbar {
+            display: flex;
+            background-color: #007bff;
+            color: #fff;
+            justify-content: space-between;
+            padding: 6px 20px;
+            padding-right: 37rem;
+        }
+
+        .logo {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            padding: 0;
+            width: 130px;
+            height: 40px;
+            z-index: 9999;
+        }
+
+        .input-fields {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .input-fields input[type="text"],
+        .input-fields input[type="password"] {
+            padding: 6px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .hideme {
+            display: none;
+            background-color: red;
+            position: absolute;
+            top: -24px;
+            right: 2px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+   box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #181818;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .nav li i {
+            margin-right: 10px;
+            display: block;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            display: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /*  cards
+     */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Adjust spacing between cards */
+        }
+
+        .top-bar {
+            background-color: rgb(0, 130, 252);
+            border-radius: 5px 5px 5px 5px;
+            width: 25.8rem;
+            margin-top: -20px;
+            height: 48px;
+            margin-left: -22px;
+        }
+
+        .empty-board {
+            flex-shrink: 0;
+            width: 370px;
+            background-color: #eeeeee;
+            padding: 20px;
+            height: 250px;
+            border-radius: 5px;
+            position: absolute;
+            top: 0px;
+             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            /* remove the display all */
+
+            /* display: none;  */
+            right: -24rem;
+        }
+
+        .card {
+            width: calc(33.33% - 20px);
+            margin-bottom: 0px;
+            height: 30rem;
+            color: gray;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .inner-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            top: 10px;
+            width: 50rem;
+            position: relative;
+        }
+
+        .card {
+            width: 220px;
+            height: 120px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .icon {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+        }
+
+        .status {
+            position: absolute;
+            top: 10px;
+            right: 87px;
+            font-weight: bold;
+        }
+
+        .count {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 38px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            height: 30px;
+            border-radius: 5px 5px;
+            background-color: rgb(32, 121, 255);
+        }
+
+        .containerr {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 500px;
+            margin-top: 27px;
+              height: 220px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .top-section input[type="text"],
+        .top-section input[type="date"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .search-btn,
+        .top-sale-btn {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-btn:hover,
+        .top-sale-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .contain {
+            position: absolute;
+            top: 390px;
+            height: 0%;
+            width: 30%;
+            right: 16rem;
+            margin: 0 auto;
+            padding: 0px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .graph input[type="date"] {
+            width: calc(35% - 10px);
+            padding: 5px;
+            margin-top: 10px;
+            margin-right: 3px;
+            margin-left: 10px;
+        }
+
+        .graph input[type="date"]:last-child {
+            margin-right: 0;
+            margin-left: 5px;
+        }
+
+        .graph {
+              margin-top: -20px;
+            width: 90%;
+               height: 240px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .p1 {
+
+            height: 40px;
+            background-color: #458efa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px 8px;
+            margin-bottom: 2px;
+        }
+
+        .payment::-webkit-scrollbar {
+            width: 0px;
+        }
+
+
+        .payment {
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            right: -240px;
+            top: -19px;
+            height: 15rem;
+            width: 15rem;
+            color: white;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+        }
+
+        .headone {
+            background-color: #007bff;
+            border-radius: 3px 3px 0 0;
+            height: 30px;
+            margin-bottom: 6px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                height: 250rem;
+            }
+
+            /* Sidebar Styles */
+            #viewport {
+                padding-left: 0;
+            }
+
+            .dropbtn {
+                background-color: transparent;
+                color: #fff;
+                padding: 17px 24px;
+                border: none;
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+            .top-navbar {
+                display: flex;
+                background-color: #007bff;
+                color: #fff;
+                width: 179%;
+                justify-content: space-between;
+                padding: 7px 14px;
+
+            }
+
+            #sidebar {
+                position: fixed;
+                top: 87rem;
+                left: 0;
+                z-index: 9999;
+                width: 100%;
+                height: 70px;
+                /* Set the height as needed */
+                overflow-y: auto;
+                background-color: #37474F;
+                flex-direction: row;
+                /* Display sidebar items horizontally */
+            }
+
+            #sidebar .nav {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .nav li {
+                margin: 0;
+            }
+
+            .nav li a:hover {
+                color: #ECEFF1;
+            }
+
+            .nav li i {
+                font-size: 25px;
+            }
+
+            .hamburger {
+                float: right;
+                margin-right: 20px;
+                /* Adjust margin as needed */
+                height: 100%;
+                display: block;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+
+            .input-fields {
+                display: none;
+                /* Initially hide */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                /* Display items vertically */
+                gap: 10px;
+                font-size: 18px;
+            }
+
+            .input-fieldss {
+                margin-top: 0rem;
+                width: 48rem;
+                display: none;
+                /* Initially hide */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                /* Display items vertically */
+                gap: 10px;
+                font-size: 18px;
+                transition: all 1s ease-in;
+                /* Transition property */
+                background-color: rgb(13, 137, 253);
+            }
+
+            .topnav a.icon {
+                float: right;
+                position: fixed;
+                /* Set the position to fixed */
+                right: 20px;
+                /* Adjust the right position as needed */
+            }
+
+
+
+
+            #sidebar .nav {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            .nav li a:hover {
+                color: #ECEFF1;
+            }
+
+            .nav li i {
+                font-size: 25px;
+            }
+
+            .top-bar {
+                background-color: rgb(0, 130, 252);
+                border-radius: 5px 5px 5px 5px;
+                width: 41.2rem;
+                margin-top: -20px;
+                height: 48px;
+                margin-left: -18px;
+            }
+
+            .empty-board {
+                flex-shrink: 0;
+                width: 39rem;
+                background-color: #eeeeee;
+                padding: 20px;
+                height: 286px;
+                border-radius: 5px;
+                position: absolute;
+                top: 120rem;
+                display: inline-block;
+                right: -7rem;
+            }
+
+            .card {
+
+                width: 100%;
+                height: auto;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 10px;
+                    box-shadow: 2px 9px 0 rgba(0, 0, 0, 0.2);
+
+                position: relative;
+
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .inner-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                top: 10px;
+                width: 120rem;
+                position: relative;
+            }
+
+            .card {
+                width: 30rem;
+                margin-left: 101px;
+                margin-bottom: 20px;
+                height: 17rem;
+            }
+
+
+            .icon {
+                position: absolute;
+                top: 40px;
+                left: 20px;
+            }
+
+            .status {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-weight: bold;
+            }
+
+            .count {
+                font-size: 24px;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                border-radius: 5px 5px;
+                background-color: rgb(32, 121, 255);
+            }
+
+            .containerr {
+                margin-top: 22rem;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-left: 3rem;
+                width: 41rem;
+                height: 24rem;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .top-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .top-section input[type="text"],
+            .top-section input[type="date"] {
+                padding: 5px;
+                margin-right: 10px;
+            }
+
+            .search-btn,
+            .top-sale-btn {
+                padding: 5px 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+
+            .search-btn:hover,
+            .top-sale-btn:hover {
+                background-color: #0056b3;
+            }
+
+            .divider {
+                border-top: 1px solid #ccc;
+                margin: 10px 0;
+            }
+
+            .contain {
+                position: absolute;
+                top: 390px;
+                height: 0%;
+                width: 30%;
+                right: 16rem;
+                margin: 0 auto;
+                padding: 0px;
+                background-color: #f0f0f0;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .graph input[type="date"] {
+                width: calc(35% - 10px);
+                padding: 5px;
+                margin-right: 10px;
+                /* Adjust margin between inputs */
+                border: 1px solid #0c0b0b;
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .graph input[type="date"]:last-child {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+
+            .graph {
+                width: 566%;
+                height: 305px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+                margin-top: 150rem;
+            }
+
+            .p1 {
+                height: 40px;
+                width: 10rem;
+                background-color: #458efa;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px 8px;
+                margin-bottom: 2px;
+            }
+
+            .payment::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .payment {
+                position: relative;
+                bottom: 0px;
+                right: 6px;
+                height: 15rem;
+                top: 25px;
+                width: 44rem;
+                background-color: rgb(255, 255, 255);
+                border-radius: 2px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                overflow-y: auto;
+                z-index: 9999;
+            }
+
+            .p1 {
+                display: flex;
+                width: 50rem;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo img {
+                padding: 0;
+                width: 150px;
+                height: 40px;
+                z-index: 9999;
+            }
+
+
+        }
+    </style>
+
+    <script>
+
+        function toggleMenu() {
+            var x = document.getElementsByClassName("input-fieldss");
+
+            // Loop through each element with class "input-fieldss"
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].style.display === "none" || x[i].style.display === "") {
+                    x[i].style.display = "block"; // Change display to block
+                } else {
+                    x[i].style.display = "none"; // Change display to none
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
